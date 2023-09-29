@@ -1,5 +1,11 @@
-import './App.css'
+import "./App.css";
+import { ShoppingMenu } from "./components/organisms/ShoppingMenu";
+import { products } from "./constants/product";
 
 export const App = () => {
-  return <div>Hello</div>
-}
+  return (
+    <div>
+      <ShoppingMenu cartItems={products}></ShoppingMenu>
+    </div>
+  );
+};
